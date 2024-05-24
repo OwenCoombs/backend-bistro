@@ -8,5 +8,11 @@ class MenuItemSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'price', 'spice_level', 'category']
 
 
+class OrderNameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OrderName
+        fields = ['id', 'name']
+
+
 
 

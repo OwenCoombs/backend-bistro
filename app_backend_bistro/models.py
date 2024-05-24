@@ -13,3 +13,11 @@ class MenuItem(models.Model):
     
     def __str__(self):
         return f"{self.name} ({self.category}) - ${self.price}, Spice Level: {self.spice_level}"
+    
+
+class OrderName(models.Model):
+    name = models.TextField()
+
+
+    def __str__(self):
+        return f'Customer: {self.name}'

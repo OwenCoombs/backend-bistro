@@ -13,3 +13,10 @@ class MenuItemViewSet(viewsets.ModelViewSet):
 
 
 
+class OrderNameViewSet(viewsets.ModelViewSet):
+    queryset = OrderName.objects.all()
+    serializer_class = OrderNameSerializer
+
+
+
+

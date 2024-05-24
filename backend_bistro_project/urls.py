@@ -22,6 +22,7 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 
 router.register(r'menuitems', MenuItemViewSet)
+router.register(r'orders', OrderNameViewSet)
 
 
 urlpatterns = [
